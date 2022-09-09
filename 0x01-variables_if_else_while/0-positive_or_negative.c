@@ -4,7 +4,7 @@
 /**
  * main-entry point
  * this programme prints programming is positive, zero or negative
- * return: zero
+ * return: 0
  */
 int main(void)
 {
