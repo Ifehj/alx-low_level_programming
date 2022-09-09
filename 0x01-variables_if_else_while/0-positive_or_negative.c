@@ -2,7 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main-entry point
+ * main - print if the number is positive, zero or negative
+ * Description - using the main function
  * this programme prints programming is positive, zero or negative
  * return: 0
  */
@@ -12,6 +13,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+	  /* Your code goes here */
 	if (n > 0)
 	{
 		printf("%i is positive\n", n);
