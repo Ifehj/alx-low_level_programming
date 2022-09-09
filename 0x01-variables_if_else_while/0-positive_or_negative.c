@@ -6,7 +6,7 @@
  * this programme prints programming is positive, zero or negative
  * return: zero
  */
-int main (void)
+int main(void)
 {
 	int n;
 
