@@ -2,13 +2,13 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - entry point
+ * main - print if the number is positive, zero or negative
  *
  * Description - using the main function
  *
  * this programme prints programming is positive, zero or negative
  *
- * return: o if true and nonzero if false
+ * Return:zero if true and nonzero if false
  */
 int main(void)
 {
