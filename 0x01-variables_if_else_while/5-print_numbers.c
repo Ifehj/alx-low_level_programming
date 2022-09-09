@@ -4,7 +4,7 @@
  * followed by a new line
  * Return: 0 if true
  */
-int main (void)
+int main(void)
 {
 	int n;
 
