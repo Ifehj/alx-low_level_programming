@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - print all possible combinations of single digit numbers
- * return 0 always
+ * return: 0 always
  */
 int main(void)
 {
@@ -17,5 +17,5 @@ int main(void)
 		}
 	}
 	putchar('\n');
-	return(0);
+	return (0);
 }
