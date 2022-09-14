@@ -27,6 +27,6 @@ void times_table(void)
 			}
 			_putchar((prod % 10) + '0');
 		}
-		_puthcar('\n');
+		_putchar('\n');
 	}
 }
