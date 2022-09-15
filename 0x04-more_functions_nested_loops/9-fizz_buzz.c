@@ -1,15 +1,17 @@
-#include <stdio.h>
+#include <stdio.h>`
 
 /**
  * main - program that prints either number, fuzz, buzz or fizzbuzz
- * Return: 0
+ *
+ *
+ * Return: returns 0
  */
 
 int main(void)
 {
 	int num = 1;
 	
-	while (num++ < 100)
+	for ( ; num < 100; num++)
 	{
 		if ((num % 3 == 0) && (num % 5))
 		{
