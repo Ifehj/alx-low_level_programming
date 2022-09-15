@@ -1,4 +1,4 @@
-#include <stdio.h>`
+#include <stdio.h>
 
 /**
  * main - program that prints either number, fuzz, buzz or fizzbuzz
