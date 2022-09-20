@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * \reset_to_98.c - resets the value of the integer
+ * reset_to_98.c - resets the value of the integer
  * @n - parameter
  * Return: nothing
  */
