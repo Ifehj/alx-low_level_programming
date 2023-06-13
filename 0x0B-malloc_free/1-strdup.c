@@ -10,7 +10,8 @@
  * It returns NULL if insufficient memory was available
  */
 
-char *_strdup(char *str){
+char *_strdup(char *str)
+{
 
 	char *chr;
 	unsigned int i, len;
@@ -18,9 +19,8 @@ char *_strdup(char *str){
 	i = 0;
 	len = 0;
 
-	if (str == NULL){
+	if (str == NULL)
 		return (NULL);
-	}
 
 	while (str[len] != '\0')
 		len++;
