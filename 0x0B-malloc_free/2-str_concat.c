@@ -1,6 +1,6 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * str_concat - concatenates two strings.
@@ -11,39 +11,37 @@
  * contains the contents of s1, followed by the contents of s2,
  * and null terminated. NULL on failure
  */
+char *str_concat(char *s1, char *s2)
+{
+	int i, j, len1, len2, len;
+	char *result;
 
-char *str_concat(char *s1, char *s2){
-	char *joint_string;
-	int len_1 = 0, len_2 = 0, len, i, j;
+	len1 = len2 = 0;
 
 	if (s1 != NULL)
 	{
 		i = 0;
 		while (s1[i++] != '\0')
-		len_1++;
+			len1++;
 	}
-	
 
 	if (s2 != NULL)
 	{
 		i = 0;
 		while (s2[i++] != '\0')
-		len_2++;
+			len2++;
 	}
-	
-	len = len_1 + len_2;
-	joint_string = (char *)malloc (sizeof(char) * (len+ 1));
 
-	if (joint_string == NULL)
+	len = len1 + len2;
+	result = (char *)malloc(sizeof(char) * (len + 1));
+	if (result == NULL)
 		return (NULL);
 
-	for (i = 0; i < len_1; i++)
-		joint_string[i] = s1[i];
+	for (i = 0; i < len1; i++)
+		result[i] = s1[i];
+	for (j = 0; j < len2; j++, i++)
+		result[i] = s2[j];
+	result[len] = '\0';
 
-	for (j = 0; j < len_2; j++)
-		joint_string[i] = s1[j];
-
-	joint_string[len] = '\0';
-
-	return (joint_string);
+	return (result);
 }
