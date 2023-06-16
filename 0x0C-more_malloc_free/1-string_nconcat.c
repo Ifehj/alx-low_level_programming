@@ -46,10 +46,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (concat_string == NULL)
 		return (NULL);
-	
+
 	for (k = 0; k < i; k++)
 		concat_string[k] = s1[k];
-	
+
 	for (k = 0; k < j; k++)
 		concat_string[k + i] = s2[k];
 
