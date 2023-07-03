@@ -13,24 +13,23 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-	char *new_string;
-	int i;
 	list_t *ptr;
+	unsigned int i;
 
 	if (str == NULL)
 		return (NULL);
 
 	for (i = 0; i != '\0'; i++)
 	{}
-	new_string = strdup(str);
 
 	ptr = malloc(sizeof(list_t));
 	if (ptr == NULL)
 		return (NULL);
-	ptr->str = new_string;
-	ptr->next = NULL;
-
+	
+	ptr->str = strdup(str);
+	ptr->len = i;
 	ptr->next = *head;
 	*head = ptr;
+
 	return (ptr);
 }
