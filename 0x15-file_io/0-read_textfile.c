@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * read_textfile: reads the letters in the file name.
- * filename: filename to be read from.
- * letters: letters is the number of letters it should read and print.
+ * read_textfile - reads the letters in the file name.
+ * @filename: filename to be read from.
+ * @letters: letters is the number of letters it should read and print.
  *
  * RETURN: actual number it could read and print.
  */
