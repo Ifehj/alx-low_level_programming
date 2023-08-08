@@ -4,7 +4,6 @@
  * append_text_to_file - function that appends text at the end of a file.
  * @filename: name of the file
  * @text_content: string to add to the end of the file.
- * 
  * Return: 1 if its a success and -1 if it fails.
 */
 
