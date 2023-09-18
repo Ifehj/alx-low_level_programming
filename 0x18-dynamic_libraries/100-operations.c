@@ -32,5 +32,5 @@ int mod(int a, int b)
 		printf("Error: Division by zero\n");
 		return 0;
 	}
-	return (a + b);
+	return (a % b);
 }
