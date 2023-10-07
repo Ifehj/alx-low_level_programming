@@ -10,6 +10,7 @@
 hash_node_t *create_node(const char *key, const char *value)
 {
 	hash_node_t *node = malloc(sizeof(hash_node_t));
+	
 	if (node == NULL)
 		return (NULL);
 	node->key = malloc(strlen(key) + 1);
@@ -34,6 +35,7 @@ hash_node_t *create_node(const char *key, const char *value)
 
 /**
  * hash_table_set - inserts a node into the hash table
+ * @ht: hash table
  * @key: key character
  * @value: value pair of the key
  *
@@ -45,7 +47,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *new_node;
 	char *value_copy;
 
-	if (ht == NULL || key == NULL || value == NULL || ht->size == 0 || *key == '\0')
+	if (ht == NULL || key == NULL || value == NULL || 
+	ht->size == 0 || *key == '\0')
 	{
 		return (0);
 	}
